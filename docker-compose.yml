@@ -1,0 +1,16 @@
+version: '3'
+services:
+  Drupal:
+    image: drupal
+    networks:
+    - mydrupal
+    ports:
+    - "8080:8080"
+  postgres:
+    image: postgres
+    networks:
+    - mydrupal
+    environment:
+    - POSTGRES_PASSWORD=123456
+volume:
+  mydrupal:
