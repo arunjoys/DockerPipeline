@@ -12,5 +12,5 @@ services:
     - mydrupal
     environment:
     - POSTGRES_PASSWORD=123456
-volume:
+networks:
   mydrupal:
