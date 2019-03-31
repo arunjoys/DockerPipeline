@@ -2,6 +2,8 @@ version: '3'
 services:
   Drupal:
     image: drupal
+    deploy:
+      replicas: 3
     networks:
     - mydrupal
     ports:
