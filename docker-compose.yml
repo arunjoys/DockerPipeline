@@ -7,7 +7,7 @@ services:
     networks:
     - mydrupal
     ports:
-    - 81:80
+    - "81:80"
   postgres:
     image: postgres
     networks:
